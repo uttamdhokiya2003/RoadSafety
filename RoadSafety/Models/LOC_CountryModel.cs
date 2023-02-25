@@ -12,7 +12,8 @@ namespace AddressBookDemo.Models
         public string? CountryName { get; set; }     
         [Required]
         public string CountryCode { get; set; }
-        public DateTime CreationDate { get; set; }
+        public DateTime Creation
+            Date { get; set; }
         public DateTime ModificationDate { get; set; }
 
         public IFormFile File { get; set; }

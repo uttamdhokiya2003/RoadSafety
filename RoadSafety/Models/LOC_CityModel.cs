@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace AddressBookDemo.Models
+namespace RoadSafety.Models
 {
     public class LOC_CityModel
     {

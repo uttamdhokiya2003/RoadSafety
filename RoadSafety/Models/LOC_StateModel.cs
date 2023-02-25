@@ -21,6 +21,7 @@ namespace AddressBookDemo.Models
         public DateTime CreationDate { get; set; }
 
         public DateTime ModificationDate { get; set; }
+
         public object CountryName { get; internal set; }
        
     }

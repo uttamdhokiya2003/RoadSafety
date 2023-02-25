@@ -18,4 +18,8 @@
     <None Include="Models\LOC_StateModel.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="EnterpriseLibrary.Data.NetCore" Version="6.3.2" />
+  </ItemGroup>
+
 </Project>

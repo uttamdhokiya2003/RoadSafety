@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RoadSafety</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/RoadSafety.styles.css" asp-append-version="true" />
+	<!-- Start Meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="BarbeX - Hair Salon HTML5 Template" />
+	<meta name="keywords" content="Creative, Digital, multipage, landing, freelancer template" />
+	<meta name="author" content="ThemeOri">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title of Site -->
+	<title>BarbeX - Hair Salon HTML5 Template</title>
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="~/~/assets/img/favicon.png">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+	<!-- font awesome -->
+	<link rel="stylesheet" href="~/assets/css/all.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="~/assets/css/animate.css">
+	<!-- Swiper -->
+	<link rel="stylesheet" href="~/assets/css/swiper-bundle.min.css">
+	<!-- Magnific -->
+	<link rel="stylesheet" href="~/assets/css/magnific-popup.css">
+	<!-- Mean menu -->
+	<link rel="stylesheet" href="~/assets/css/meanmenu.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="~/assets/sass/style.css">
+</head>
+
+<body>
+    <header>
+		<div class="header__sticky one">
+		<div class="bg-black">
+			<div class="container custom__container">
+				<div class="header__area-menubar">
+					<div class="header__area-menubar-left" style="padding-left:100px;">
+						<div class="header__area-menubar-left-logo">
+							<a href="index.html"><img src="~/assets/img/logo.png" style="width:90px;height:90px; border-radius:10px;" alt=""></a>
+							<div class="responsive-menu"></div>
+						</div>
+						<div class="header__area-menubar-left-contact">
+							<div class="header__area-menubar-left-contact-icon">
+								<i class="fal fa-phone-alt"></i>
+							</div>
+							<div class="header__area-menubar-left-contact-info">
+								<h6><a href="tel:+125(895)658">Hotline +125 (895) 658</a></h6>
+							</div>
+						</div>
+					</div>
+					<div class="header__area-menubar-right">
+						<div class="header__area-menubar-right-menu menu-responsive" style="display: block;">
+							<ul id="mobilemenu">
+								<li class="menu-item-has-children">
+									<a href="#">Home</a>
+									<ul class="sub-menu">
+										<li><a href="index.html">Home 01</a></li>
+										<li><a href="index-2.html">Home 02</a></li>
+										<li><a href="index-3.html">Home 03</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Pages</a>
+									<ul class="sub-menu">
+										<li><a href="about.html">About</a></li>
+										<li><a href="price.html">Price</a></li>
+										<li><a href="team.html">Team</a></li>
+										<li><a href="services.html">Services</a></li>
+										<li><a href="services-details.html">Services Details</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Shop</a>
+									<ul class="sub-menu">
+										<li><a href="product-page.html">Product Page</a></li>
+										<li><a href="product-details.html">Product Details</a></li>
+										<li><a href="cart.html">Cart</a></li>
+										<li><a href="checkout.html">Checkout</a></li>
+									</ul>
+								</li>
+								<li class="menu-item-has-children">
+									<a href="#">Blog</a>
+									<ul class="sub-menu">
+										<li><a href="blog-grid.html">Blog Grid</a></li>
+										<li><a href="blog-standard.html">Blog Standard</a></li>
+										<li><a href="blog-details.html">Blog Details</a></li>
+									</ul>
+								</li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+						<div class="header__area-menubar-right-box">
+							<div class="header__area-menubar-right-box-search">
+								<div class="search">
+									<span class="header__area-menubar-right-box-search-icon open"><i class="fal fa-search"></i></span>
+								</div>
+								<div class="header__area-menubar-right-box-search-box">
+									<form>
+										<input type="search" placeholder="Search Here.....">
+										<button type="submit">
+											<i class="fal fa-search"></i>
+										</button>
+									</form> <span class="header__area-menubar-right-box-search-box-icon"><i class="fal fa-times"></i></span>
+								</div>
+							</div>
+								<div class="header__area-menubar-right-box-btn" style="padding-right:60px; color:#E9B500">
+									<a href="contact.html" class="theme-banner-btn">Booking Now<i class="far fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+        @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">RoadSafety</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>*@
+    </header>
+    
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+   
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - RoadSafety - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+	<!-- Scroll Btn End -->
+	<!-- Main JS -->
+	<script src="~/assets/js/jquery-3.6.0.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="~/assets/js/bootstrap.min.js"></script>
+	<!-- Counter up -->
+	<script src="~/assets/js/jquery.counterup.min.js"></script>
+	<!-- Popper JS -->
+	<script src="~/assets/js/popper.min.js"></script>
+	<!-- Magnific JS -->
+	<script src="~/assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Swiper JS -->
+	<script src="~/assets/js/swiper-bundle.min.js"></script>
+	<!-- Waypoints JS -->
+	<script src="~/assets/js/jquery.waypoints.min.js"></script>
+	<!-- Mean menu -->
+	<script src="~/assets/js/jquery.meanmenu.min.js"></script>
+	<!-- Custom JS -->
+	<script src="~/assets/js/custom.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

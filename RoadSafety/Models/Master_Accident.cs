@@ -21,5 +21,6 @@ namespace RoadSafety.Models
         public DateTime Date            { get; set; }
         public int      Casuality       { get; set; }
         public int      Death       { get; set; }
+        public object Casulity { get; internal set; }
     }
 }

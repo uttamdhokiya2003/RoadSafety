@@ -15,4 +15,9 @@
         public int Year1 { get; set; }
         
     }
+    public class VEH_Vehicle1DropDownModel
+    {
+        public int? Vehicle1ID { get; set; }
+        public string? Vehicle1Type { get; set; }
+    }
 }

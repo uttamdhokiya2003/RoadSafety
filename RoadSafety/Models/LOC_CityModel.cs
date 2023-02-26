@@ -1,17 +1,20 @@
 ﻿using Newtonsoft.Json;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-
 namespace RoadSafety.Models
 {
     public class LOC_CityModel
     {
         public int? CityID { get; set; }
 
-        [Required]
-        public string? CityName { get; set; }
 
         [Required]
+        [DisplayName("City Name")]
+        public string CityName { get; set; }
+
+
+        [Required]
+        [DisplayName("City Code")]
         public string CityCode { get; set; }
 
         [Required]
@@ -21,10 +24,12 @@ namespace RoadSafety.Models
         [Required]
         [DisplayName("State Name")]
         public int StateID { get; set; }
+
         public DateTime CreationDate { get; set; }
+
         public DateTime ModificationDate { get; set; }
-        public object CountryName { get;  set; }
-        public object StateName { get; set; }
+        public object CountryName { get; internal set; }
+        public object StateName { get; internal set; }
     }
     public class LOC_CityDropDownModel
     {

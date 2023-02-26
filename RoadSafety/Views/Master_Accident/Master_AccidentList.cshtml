@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "LOC_CountryList";
+    ViewData["Title"] = "Master_Accident";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -9,19 +9,19 @@
 <div class="col-md-12" style="font-family:'Bahnschrift';font-size:x-large">
     <div class="row">
         <div class="col-md-3">
-            <h3>Country List</h3>
+            <h3>Accident List</h3>
         </div>
         <div class="col-md-8">
             <form method="post" class="form-inline">
                 <div class="row">
                     <div class="col-md-5 form-inline">
-                        <input class="form-control mr-sm-2" name="CountryName" type="text" placeholder="Country Name" />
+                        @*<input class="form-control mr-sm-2" name="CountryName" type="text" placeholder="Country Name" />*@
                     </div>
                     <div class="col-md-5 form-inline">
-                        <input class="form-control mr-sm-2" name="CountryCode" type="text" placeholder="Country Code" />
+                        @*<input class="form-control mr-sm-2" name="CountryCode" type="text" placeholder="Country Code" />*@
                     </div>
                     <div class="col-md-2 form-inline">
-                        <button class="btn btn-success" type="submit" asp-controller="LOC_Country" asp-action="Index">Apply Filters</button>
+                        @*<button class="btn btn-success" type="submit" asp-controller="LOC_Country" asp-action="Index">Apply Filters</button>*@
                     </div>
                 </div>
             </form>
@@ -39,12 +39,24 @@
         <thead>
             <tr class="table-secondary text-center ">
                 @*<th scope="col" class="py-4">Country ID</th>*@
-                <th scope="col" class="py-4">Country Name</th>
-                <th scope="col" class="py-4">Country Code</th>
+                <th scope="col" class="py-4"> Vehicle1Type</th>
+                <th scope="col" class="py-4">Vehicle2Type</th>
                 
-                <th scope="col" class="py-4">Creation Date</th>
-                <th scope="col" class="py-4">Modification Date</th>
-                
+                <th scope="col" class="py-4">CountryName</th>
+
+                <th scope="col" class="py-4">StateName</th>
+
+                <th scope="col" class="py-4">CityName</th>
+
+                <th scope="col" class="py-4">Address</th>
+                <th scope="col" class="py-4">Date</th>
+                <th scope="col" class="py-4">Casuality</th>
+                <th scope="col" class="py-4">Death</th>
+
+
+
+
+
             </tr>
         </thead>
         <tbody id="sample_2">
@@ -52,12 +64,22 @@
             {
                 <tr class="table-light table-striped text-center">
                     @*<td class="py-4">@dr["CountryID"]</td>*@
+                    <td class="py-4">@dr["Vehicle1Type"]</td>
+                    <td class="py-4">@dr["Vehicle2Type"]</td>
+               
                     <td class="py-4">@dr["CountryName"]</td>
-                    <td class="py-4">@dr["CountryCode"]</td>
-                    
-                    <td class="py-4">@Convert.ToDateTime(dr["CreationDate"]).ToString("dd-mm-yyyy")</td>
-                    <td class="py-4">@Convert.ToDateTime(dr["ModificationDate"]).ToString("dd-mm-yyyy")</td>
-                   
+                    <td class="py-4">@dr["StateName"]</td>
+                    <td class="py-4">@dr["CityName"]</td>
+                    <td class="py-4">@dr["Address"]</td>
+
+                    <td class="py-4">@Convert.ToDateTime(dr["Date"]).ToString("dd-mm-yyyy")</td>
+                    <td class="py-4">@dr["Casuality"]</td>
+
+
+                    <td class="py-4">@dr["Death"]</td>
+
+
+
                 </tr>
             }
         </tbody>

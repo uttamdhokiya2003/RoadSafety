@@ -74,12 +74,24 @@
                                 </select>
                                 <span asp-validation-for="CityID" class="text-danger"></span>
                             </div>
-
-                         
+                            <div class="form-group">
+                                <label>Date : </label>
+                                <input type="date" class="form-control" asp-for="Date" />
+                            </div>
+                            <div class="form-group">
+                                <label>Email : </label>
+                                <input type="text" class="form-control" asp-for="Casuality" placeholder="Enter Casuality " />
+                                <span asp-validation-for="Casuality" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label>Email : </label>
+                                <input type="text" class="form-control" asp-for="Death" placeholder="Enter Death " />
+                                <span asp-validation-for="Death" class="text-danger"></span>
+                            </div>
                             <br />
 
                             <input type="submit" class="btn btn-dark" value="Save" />
-                            <a asp-controller="LOC_Country" asp-action="Index" class="btn btn-outline-success">Cancel</a>
+                            <a asp-controller="Master_Accident" asp-action="Index" class="btn btn-outline-success">Cancel</a>
 
                         </form>
                     </div>

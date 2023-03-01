@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AdddressBook.styles.css" asp-append-version="true" />*@
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="BarbeX - Hair Salon HTML5 Template" />
+    <meta name="keywords" content="Creative, Digital, multipage, landing, freelancer template" />
+    <meta name="author" content="ThemeOri">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="/assets/css/all.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
+    <!-- Magnific -->
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+    <!-- Mean menu -->
+    <link rel="stylesheet" href="/assets/css/meanmenu.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/sass/style.css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css" />
     <link href="~/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <link href="~/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
@@ -28,6 +51,9 @@
     <link href="~/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
     <!-- END THEME LAYOUT STYLES -->
     <link rel="shortcut icon" href="favicon.ico" />
+    <link href="~/lib/leaflet/leaflet.css" rel="stylesheet" />
+    <link href="~/lib/leaflet/leaflet.min.css" rel="stylesheet" />
+
 </head>
 
 <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
@@ -40,11 +66,9 @@
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
                     <a asp-area="" asp-controller="Home" asp-action="Index">
-                        <img src="~/layouts/layout/img/logo.png" alt="logo" class="logo-default " style="width:150px; margin-bottom:10px;" />
+                        <img src="~/layouts/layout/img/logo.png" alt="logo" class="logo-default" style="width:130px; margin-left:10px;" />
                     </a>
-                    <div class="menu-toggler sidebar-toggler">
-                        <span></span>
-                    </div>
+                   
                 </div>
                 <!-- END LOGO -->
                 <!-- BEGIN RESPONSIVE MENU TOGGLER -->
@@ -59,197 +83,7 @@
                         <!-- DOC: Apply "dropdown-dark" class after "dropdown-extended" to change the dropdown styte -->
                         <!-- DOC: Apply "dropdown-hoverable" class after below "dropdown" and remove data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to enable hover dropdown mode -->
                         <!-- DOC: Remove "dropdown-hoverable" and add data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to the below A element with dropdown-toggle class -->
-                        <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
-                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <i class="icon-bell"></i>
-                                <span class="badge badge-default"> 7 </span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="external">
-                                    <h3>
-                                        <span class="bold">12 pending</span> notifications
-                                    </h3>
-                                    <a href="page_user_profile_1.html">view all</a>
-                                </li>
-                                <li>
-                                    <ul class="dropdown-menu-list scroller" style="height: 250px;" data-handle-color="#637283">
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">just now</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-success">
-                                                        <i class="fa fa-plus"></i>
-                                                    </span> New user registered.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">3 mins</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-danger">
-                                                        <i class="fa fa-bolt"></i>
-                                                    </span> Server #12 overloaded.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">10 mins</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-warning">
-                                                        <i class="fa fa-bell-o"></i>
-                                                    </span> Server #2 not responding.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">14 hrs</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-info">
-                                                        <i class="fa fa-bullhorn"></i>
-                                                    </span> Application error.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">2 days</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-danger">
-                                                        <i class="fa fa-bolt"></i>
-                                                    </span> Database overloaded 68%.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">3 days</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-danger">
-                                                        <i class="fa fa-bolt"></i>
-                                                    </span> A user IP blocked.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">4 days</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-warning">
-                                                        <i class="fa fa-bell-o"></i>
-                                                    </span> Storage Server #4 not responding dfdfdfd.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">5 days</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-info">
-                                                        <i class="fa fa-bullhorn"></i>
-                                                    </span> System Error.
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="time">9 days</span>
-                                                <span class="details">
-                                                    <span class="label label-sm label-icon label-danger">
-                                                        <i class="fa fa-bolt"></i>
-                                                    </span> Storage server failed.
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- END NOTIFICATION DROPDOWN -->
-                        <!-- BEGIN INBOX DROPDOWN -->
-                        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
-                        <li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
-                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <i class="icon-envelope-open"></i>
-                                <span class="badge badge-default"> 4 </span>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li class="external">
-                                    <h3>
-                                        You have
-                                        <span class="bold">7 New</span> Messages
-                                    </h3>
-                                    <a href="app_inbox.html">view all</a>
-                                </li>
-                                <li>
-                                    <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
-                                        <li>
-                                            <a href="#">
-                                                <span class="photo">
-                                                    <img src="../assets/layouts/layout3/img/avatar2.jpg" class="img-circle" alt="">
-                                                </span>
-                                                <span class="subject">
-                                                    <span class="from"> Lisa Wong </span>
-                                                    <span class="time">Just Now </span>
-                                                </span>
-                                                <span class="message"> Vivamus sed auctor nibh congue nibh. auctor nibh auctor nibh... </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="photo">
-                                                    <img src="../assets/layouts/layout3/img/avatar3.jpg" class="img-circle" alt="">
-                                                </span>
-                                                <span class="subject">
-                                                    <span class="from"> Richard Doe </span>
-                                                    <span class="time">16 mins </span>
-                                                </span>
-                                                <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="photo">
-                                                    <img src="../assets/layouts/layout3/img/avatar1.jpg" class="img-circle" alt="">
-                                                </span>
-                                                <span class="subject">
-                                                    <span class="from"> Bob Nilson </span>
-                                                    <span class="time">2 hrs </span>
-                                                </span>
-                                                <span class="message"> Vivamus sed nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="photo">
-                                                    <img src="../assets/layouts/layout3/img/avatar2.jpg" class="img-circle" alt="">
-                                                </span>
-                                                <span class="subject">
-                                                    <span class="from"> Lisa Wong </span>
-                                                    <span class="time">40 mins </span>
-                                                </span>
-                                                <span class="message"> Vivamus sed auctor 40% nibh congue nibh... </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span class="photo">
-                                                    <img src="../assets/layouts/layout3/img/avatar3.jpg" class="img-circle" alt="">
-                                                </span>
-                                                <span class="subject">
-                                                    <span class="from"> Richard Doe </span>
-                                                    <span class="time">46 mins </span>
-                                                </span>
-                                                <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- END INBOX DROPDOWN -->
+                        
                         <!-- BEGIN TODO DROPDOWN -->
                         <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
                         <li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
@@ -260,22 +94,21 @@
                             <ul class="dropdown-menu extended tasks">
                                 <li class="external">
                                     <h3>
-                                        You have
-                                        <span class="bold">12 pending</span> tasks
+                                        Here Are
+                                        <span class="bold">Some Emergency Numbers</span> tasks
                                     </h3>
-                                    <a href="app_todo.html">view all</a>
+
                                 </li>
                                 <li>
                                     <ul class="dropdown-menu-list scroller" style="height: 275px;" data-handle-color="#637283">
                                         <li>
                                             <a href="javascript:;">
                                                 <span class="task">
-                                                    <span class="desc">New release v1.2 </span>
-                                                    <span class="percent">30%</span>
+                                                    <span>Ambulance :</span>
                                                 </span>
-                                                <span class="progress">
-                                                    <span style="width: 40%;" class="progress-bar progress-bar-success" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">40% Complete</span>
+                                                <span>
+                                                    <span>
+                                                        <span>108</span>
                                                     </span>
                                                 </span>
                                             </a>
@@ -283,12 +116,11 @@
                                         <li>
                                             <a href="javascript:;">
                                                 <span class="task">
-                                                    <span class="desc">Application deployment</span>
-                                                    <span class="percent">65%</span>
+                                                    <span>Police :</span>
                                                 </span>
-                                                <span class="progress">
-                                                    <span style="width: 65%;" class="progress-bar progress-bar-danger" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">65% Complete</span>
+                                                <span>
+                                                    <span>
+                                                        <span>100</span>
                                                     </span>
                                                 </span>
                                             </a>
@@ -296,12 +128,11 @@
                                         <li>
                                             <a href="javascript:;">
                                                 <span class="task">
-                                                    <span class="desc">Mobile app release</span>
-                                                    <span class="percent">98%</span>
+                                                    <span>Women Helpline :</span>
                                                 </span>
-                                                <span class="progress">
-                                                    <span style="width: 98%;" class="progress-bar progress-bar-success" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">98% Complete</span>
+                                                <span>
+                                                    <span>
+                                                        <span>181</span>
                                                     </span>
                                                 </span>
                                             </a>
@@ -309,12 +140,11 @@
                                         <li>
                                             <a href="javascript:;">
                                                 <span class="task">
-                                                    <span class="desc">Database migration</span>
-                                                    <span class="percent">10%</span>
+                                                    <span>Fire Brigade :</span>
                                                 </span>
-                                                <span class="progress">
-                                                    <span style="width: 10%;" class="progress-bar progress-bar-warning" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">10% Complete</span>
+                                                <span>
+                                                    <span>
+                                                        <span>102</span>
                                                     </span>
                                                 </span>
                                             </a>
@@ -322,38 +152,11 @@
                                         <li>
                                             <a href="javascript:;">
                                                 <span class="task">
-                                                    <span class="desc">Web server upgrade</span>
-                                                    <span class="percent">58%</span>
+                                                    <span>ICU On Wheels :</span>
                                                 </span>
-                                                <span class="progress">
-                                                    <span style="width: 58%;" class="progress-bar progress-bar-info" aria-valuenow="58" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">58% Complete</span>
-                                                    </span>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="task">
-                                                    <span class="desc">Mobile development</span>
-                                                    <span class="percent">85%</span>
-                                                </span>
-                                                <span class="progress">
-                                                    <span style="width: 85%;" class="progress-bar progress-bar-success" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">85% Complete</span>
-                                                    </span>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="javascript:;">
-                                                <span class="task">
-                                                    <span class="desc">New UI release</span>
-                                                    <span class="percent">38%</span>
-                                                </span>
-                                                <span class="progress progress-striped">
-                                                    <span style="width: 38%;" class="progress-bar progress-bar-important" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">
-                                                        <span class="sr-only">38% Complete</span>
+                                                <span>
+                                                    <span>
+                                                        <span>104</span>
                                                     </span>
                                                 </span>
                                             </a>
@@ -367,41 +170,41 @@
                         <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
                         <li class="dropdown dropdown-user">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                <img alt="" class="img-circle" src="../assets/layouts/layout/img/avatar3_small.jpg" />
+                                <img alt="" class="img-circle" src="~/assets/layouts/layout/img/avatar3_small.jpg" />
                                 <span class="username username-hide-on-mobile"> Nick </span>
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-default">
                                 <li>
-                                    <a href="page_user_profile_1.html">
+                                    <a href="#">
                                         <i class="icon-user"></i> My Profile
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="app_calendar.html">
+                                    <a href="#">
                                         <i class="icon-calendar"></i> My Calendar
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="app_inbox.html">
+                                    <a href="#">
                                         <i class="icon-envelope-open"></i> My Inbox
                                         <span class="badge badge-danger"> 3 </span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="app_todo.html">
+                                    <a href="#">
                                         <i class="icon-rocket"></i> My Tasks
                                         <span class="badge badge-success"> 7 </span>
                                     </a>
                                 </li>
                                 <li class="divider"> </li>
                                 <li>
-                                    <a href="page_user_lock_1.html">
+                                    <a href="#l">
                                         <i class="icon-lock"></i> Lock Screen
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="page_user_login_1.html">
+                                    <a href="#">
                                         <i class="icon-key"></i> Log Out
                                     </a>
                                 </li>
@@ -411,7 +214,7 @@
                         <!-- BEGIN QUICK SIDEBAR TOGGLER -->
                         <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
                         <li class="dropdown dropdown-quick-sidebar-toggler">
-                            <a href="javascript:;" class="dropdown-toggle">
+                            <a href="#" class="dropdown-toggle">
                                 <i class="icon-logout"></i>
                             </a>
                         </li>
@@ -486,37 +289,13 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a asp-area="" asp-controller="LOC_State" asp-action="Index" class="nav-link nav-toggle">
+                            <a asp-area="" asp-controller="Map" asp-action="Index" class="nav-link nav-toggle">
                                 <i class="icon-diamond"></i>
-                                <span class="title">State</span>
+                                <span class="title">Map</span>
                                 <span class="">&#8608;</span>
-                                <i class="bi-box-arrow-in-right"></i>
-                                <span class="material-icons">
+                            </a>
+                        </li>
 
-                                </span>
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a asp-area="" asp-controller="LOC_City" asp-action="Index" class="nav-link nav-toggle">
-                                <i class="icon-diamond"></i>
-                                <span class="title">City</span>
-                                <span class="">&#8608;</span>
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a asp-area="" asp-controller="CON_Contact" asp-action="Index" class="nav-link nav-toggle">
-                                <i class="icon-diamond"></i>
-                                <span class="title">Contact</span>
-                                <span class="">&#8608;</span>
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a asp-area="" asp-controller="MST_ContactCategory" asp-action="Index" class="nav-link nav-toggle">
-                                <i class="icon-diamond"></i>
-                                <span class="title">ContactCategory</span>
-                                <span class="">&#8608;</span>
-                            </a>
-                        </li>
                     </ul>
                     <!-- END SIDEBAR MENU -->
                     <!-- END SIDEBAR MENU -->
@@ -525,46 +304,58 @@
             </div>
 
 
-   
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-   
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+               
+           
+            <footer class="border-top footer text-muted">
+            </footer>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - RoadSafety - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    
-    <!-- BEGIN CORE PLUGINS -->
-    <script src="~/global/plugins/jquery.min.js" type="text/javascript"></script>
-    <script src="~/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="~/global/plugins/js.cookie.min.js" type="text/javascript"></script>
-    <script src="~/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
-    <script src="~/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
-    <script src="~/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
-    <!-- END CORE PLUGINS -->
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <script src="~/global/scripts/datatable.js" type="text/javascript"></script>
-    <script src="~/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
-    <script src="~/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
-    <!-- END PAGE LEVEL PLUGINS -->
-    <!-- BEGIN THEME GLOBAL SCRIPTS -->
-    <script src="~/global/scripts/app.min.js" type="text/javascript"></script>
-    <!-- END THEME GLOBAL SCRIPTS -->
-    <!-- BEGIN PAGE LEVEL SCRIPTS -->
-    <script src="~/pages/scripts/table-datatables-editable.min.js" type="text/javascript"></script>
-    <!-- END PAGE LEVEL SCRIPTS -->
-    <!-- BEGIN THEME LAYOUT SCRIPTS -->
-    <script src="~/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
-    <script src="~/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
-    <script src="~/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
-    <script src="~/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
-    <script sr c="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-
-    <!-- END THEME LAYOUT SCRIPTS -->
-    @await RenderSectionAsync("Scripts", required: false)
+            <!-- BEGIN CORE PLUGINS -->
+            <script src="~/global/plugins/jquery.min.js" type="text/javascript"></script>
+            <script src="~/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+            <script src="~/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+            <script src="~/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+            <script src="~/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+            <script src="~/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+            <!-- END CORE PLUGINS -->
+            <!-- BEGIN PAGE LEVEL PLUGINS -->
+            <script src="~/global/scripts/datatable.js" type="text/javascript"></script>
+            <script src="~/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+            <script src="~/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+            <!-- END PAGE LEVEL PLUGINS -->
+            <!-- BEGIN THEME GLOBAL SCRIPTS -->
+            <script src="~/global/scripts/app.min.js" type="text/javascript"></script>
+            <!-- END THEME GLOBAL SCRIPTS -->
+            <!-- BEGIN PAGE LEVEL SCRIPTS -->
+            <script src="~/pages/scripts/table-datatables-editable.min.js" type="text/javascript"></script>
+            <!-- END PAGE LEVEL SCRIPTS -->
+            <!-- BEGIN THEME LAYOUT SCRIPTS -->
+            <script src="~/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+            <script src="~/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+            <script src="~/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+            <script src="~/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+            <script sr c="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+            <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+            <script src="/assets/js/jquery-3.6.0.min.js"></script>
+            <!-- Bootstrap JS -->
+            <script src="/assets/js/bootstrap.min.js"></script>
+            <!-- Counter up -->
+            <script src="/assets/js/jquery.counterup.min.js"></script>
+            <!-- Popper JS -->
+            <script src="/assets/js/popper.min.js"></script>
+            <!-- Magnific JS -->
+            <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+            <!-- Swiper JS -->
+            <script src="/assets/js/swiper-bundle.min.js"></script>
+            <!-- Waypoints JS -->
+            <script src="/assets/js/jquery.waypoints.min.js"></script>
+            <!-- Mean menu -->
+            <script src="/assets/js/jquery.meanmenu.min.js"></script>
+            <!-- Custom JS -->
+            <script src="/assets/js/custom.js"></script>
+            <!-- END THEME LAYOUT SCRIPTS -->
+            @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

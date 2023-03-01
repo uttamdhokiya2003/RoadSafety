@@ -1,0 +1,51 @@
+﻿@{
+
+    ViewData["Title"] = "Map";
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@using System.Data;
+<div class="responsive" style="padding-left:230px;">
+    <div id="map" style="width:100%; height: 800px"></div>
+</div>
+    <script src="~/lib/leaflet/leaflet.js"></script>
+    <script src="~/lib/leaflet/leaflet.min.js"></script>
+
+
+
+<script>
+
+    var map = L.map('map').setView([21.7679, 78.8718], 5);
+
+    var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
+    osm.addTo(map);
+    var Tamil_Nadu = L.marker([11.059821, 78.387451]).bindPopup('Accident Occured').addTo(map),
+        Telangana = L.marker([17.123184, 79.208824]).bindPopup('Accident Occured').addTo(map),
+        Madhya_Pradesh = L.marker([23.473324, 77.947998]).bindPopup('Accident Occured').addTo(map),
+        Haryana = L.marker([29.238478, 76.431885]).bindPopup('Accident Occured').addTo(map),
+        Chhattisgarh = L.marker([21.295132, 81.828232]).bindPopup('Accident Occured').addTo(map),
+        Maharashtra = L.marker([19.601194, 75.552979]).bindPopup('Accident Occured').addTo(map),
+        Tripura = L.marker([23.745127, 91.746826]).bindPopup('Accident Occured').addTo(map),
+        Karnataka = L.marker([15.317277, 75.713890]).bindPopup('Accident Occured').addTo(map),
+        Kerala = L.marker([10.850516, 76.271080]).bindPopup('Accident Occured').addTo(map),
+        Uttar_Pradesh = L.marker([28.207609, 79.826660]).bindPopup('Accident Occured').addTo(map),
+        Assam = L.marker([26.244156, 92.537842]).bindPopup('Accident Occured').addTo(map),
+        West_Bengal = L.marker([22.978624, 87.747803]).bindPopup('Accident Occured').addTo(map),
+        Gujarat = L.marker([22.309425, 72.136230]).bindPopup('Accident Occured').addTo(map),
+        Odisha = L.marker([20.940920, 84.803467]).bindPopup('Accident Occured').addTo(map),
+        Rajasthan = L.marker([27.391277, 73.432617]).bindPopup('Accident Occured').addTo(map),
+        Himachal_Pradesh = L.marker([32.084206, 77.571167]).bindPopup('Accident Occured').addTo(map),
+        Rajkot = L.marker([35.084206, 74.571167]).bindPopup('Accident Occured').addTo(map),
+        area1 = L.marker([45.084206, 78.571007]).bindPopup('Accident Occured').addTo(map),
+        
+        area2 = L.marker([25.084206, 54.571167]).bindPopup('Accident Occured').addTo(map),
+        area3 = L.marker([45.084206, 94.571167]).bindPopup('Accident Occured').addTo(map),
+        area4 = L.marker([65.084206, 30.571167]).bindPopup('Accident Occured').addTo(map),
+        area5 = L.marker([33.084206, 74.571167]).bindPopup('Accident Occured').addTo(map),
+        area6 = L.marker([55.084206, 84.571167]).bindPopup('Accident Occured').addTo(map),
+        area7 = L.marker([69.084206, 89.571167]).bindPopup('Accident Occured').addTo(map);
+        
+</script>
